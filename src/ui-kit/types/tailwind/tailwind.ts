@@ -1,5 +1,5 @@
 /** Tailwind global color property */
-export type TailwindGlobalColor =
+type TailwindGlobalColor =
   | "red-50"
   | "red-100"
   | "red-200"
@@ -5839,7 +5839,7 @@ export interface Tailwind
  * @see
  * {@link https://tailwindcss.com/docs Tailwind docs}
  */
-export type TailwindNestGroups =
+type TailwindNestGroups =
   | "*"
   | "**"
   | "not-first"
@@ -6194,3 +6194,163 @@ export type TailwindNestGroups =
   | "starting"
   | "print"
   | "forced-colors";
+
+
+export type TailwindClasses =
+  BackgroundImageValue |
+  BottomValue |
+  GridColumnValue |
+  EndValue |
+  TextIndentValue |
+  InsetValue |
+  LeftValue |
+  MarginValue |
+  OrderValue |
+  OutlineOffsetValue |
+  RightValue |
+  RotateValue |
+  GridRowValue |
+  ScaleValue |
+  ScrollMarginValue |
+  SkewValue |
+  StartValue |
+  TopValue |
+  LetterSpacingValue |
+  TranslateValue |
+  TextUnderlineOffsetValue |
+  ZIndexValue |
+  ContainerTypeValue |
+  PositionValue |
+  AccentColorValue |
+  VerticalAlignValue |
+  AnimationValue |
+  FontSmoothingValue |
+  AppearanceValue |
+  AspectRatioValue |
+  GridAutoColumnsValue |
+  GridAutoRowsValue |
+  BackdropFilterValue |
+  BackfaceVisibilityValue |
+  FlexBasisValue |
+  BackgroundColorValue |
+  BackgroundSizeValue |
+  BackgroundBlendModeValue |
+  BackgroundPositionValue |
+  BackgroundClipValue |
+  BackgroundAttachmentValue |
+  BackgroundRepeatValue |
+  BackgroundOriginValue |
+  DisplayValue |
+  FilterValue |
+  BorderWidthValue |
+  BorderColorValue |
+  BorderCollapseValue |
+  BorderStyleValue |
+  BorderSpacingValue |
+  BoxSizingValue |
+  BoxDecorationBreakValue |
+  BreakAfterValue |
+  WordBreakValue |
+  BreakBeforeValue |
+  BreakInsideValue |
+  TextTransformValue |
+  CaptionSideValue |
+  CaretColorValue |
+  ClearValue |
+  VisibilityValue |
+  ColumnsValue |
+  ContainValue |
+  MaxWidthValue |
+  AlignContentValue |
+  ContentValue |
+  CursorValue |
+  TextDecorationThicknessValue |
+  TextDecorationColorValue |
+  TextDecorationStyleValue |
+  TransitionDelayValue |
+  FontVariantNumericValue |
+  TransitionDurationValue |
+  TransitionTimingFunctionValue |
+  FieldSizingValue |
+  FillValue |
+  FlexValue |
+  FlexDirectionValue |
+  FlexWrapValue |
+  FloatValue |
+  FontWeightValue |
+  FontFamilyValue |
+  FontStretchValue |
+  ForcedColorAdjustValue |
+  GapValue |
+  GridTemplateColumnsValue |
+  GridAutoFlowValue |
+  GridTemplateRowsValue |
+  FlexGrowValue |
+  HeightValue |
+  HyphensValue |
+  BoxShadowValue |
+  IsolationValue |
+  FontStyleValue |
+  AlignItemsValue |
+  JustifyContentValue |
+  JustifyItemsValue |
+  JustifySelfValue |
+  LineHeightValue |
+  LineClampValue |
+  TextDecorationLineValue |
+  ListStyleTypeValue |
+  ListStyleImageValue |
+  ListStylePositionValue |
+  MaxHeightValue |
+  MinHeightValue |
+  MinWidthValue |
+  MixBlendModeValue |
+  ObjectPositionValue |
+  ObjectFitValue |
+  OpacityValue |
+  TransformOriginValue |
+  OutlineWidthValue |
+  OutlineColorValue |
+  OutlineStyleValue |
+  OverflowValue |
+  TextOverflowValue |
+  OverscrollBehaviorValue |
+  PaddingValue |
+  PerspectiveValue |
+  PerspectiveOriginValue |
+  PlaceContentValue |
+  PlaceItemsValue |
+  PlaceSelfValue |
+  ColorValue |
+  PointerEventsValue |
+  ResizeValue |
+  BorderRadiusValue |
+  ColorSchemeValue |
+  ScrollBehaviorValue |
+  ScrollPaddingValue |
+  UserSelectValue |
+  AlignSelfValue |
+  FlexShrinkValue |
+  WidthValue |
+  ScrollSnapAlignValue |
+  ScrollSnapStopValue |
+  ScrollSnapTypeValue |
+  StrokeWidthValue |
+  StrokeValue |
+  TableLayoutValue |
+  FontSizeValue |
+  TextWrapValue |
+  TextAlignValue |
+  TouchActionValue |
+  TransformValue |
+  TransformStyleValue |
+  TransitionPropertyValue |
+  TransitionBehaviorValue |
+  WhiteSpaceValue |
+  WillChangeValue |
+  TailwindGlobalColor |
+  TailwindNestGroups |
+  `${TailwindNestGroups}:${ScaleValue}` |
+  `${TailwindNestGroups}:${FontSizeValue}` |
+  `${TailwindNestGroups}:${BackgroundColorValue}` |
+  `${TailwindNestGroups}:${ColorTextLiteral}`;

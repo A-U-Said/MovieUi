@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import useAppSelector from "@/hooks";
 import { startupService } from "@/services";
-import { Heading } from "@/ui-kit";
+import { Heading, Main, Paragraph } from "@/ui-kit";
+import { TopNav } from "@/sharedComponents";
 
 
 const Home: React.FC = () => {
@@ -16,10 +17,17 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <main className="flex divide">
-        <Heading size="h3" test={{ bottom: "bottom-0", flex: "flex-none" }}>Home</Heading>
-        <p className="block whitespace-pre mb-2 text-sm font-medium text-gray-900 dark:text-white">{JSON.stringify(user, null, 2)}</p>
-      </main>
+      <TopNav />
+      
+      <Main>
+
+        <Heading size="h3">Home</Heading>
+
+        <Paragraph>
+          {JSON.stringify(user, null, 2)}
+        </Paragraph>
+
+      </Main>
     </>
   )
 }
